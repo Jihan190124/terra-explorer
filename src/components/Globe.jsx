@@ -50,7 +50,7 @@ function Earth({ onPick }) {
       }}
     >
       <sphereGeometry args={[1, 96, 96]} />
-      <meshStandardMaterial map={map} color={map ? '#ffffff' : '#1b4b63'} roughness={0.95} />
+      <meshBasicMaterial map={map} color={map ? '#ffffff' : '#1b4b63'} toneMapped={false} />
     </mesh>
   );
 }
